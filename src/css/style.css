@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Maven Pro', sans-serif;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+
+/* variables */
+:root {
+  --main-color: #fff;
+  --main-bg-color: 138, 21, 56;
+  --header-border-color: 161, 16, 59;
+  --body-border-color: 214, 197, 197;
+}
+
+/* header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 150px;
+
+  color: var(--main-color);
+  background-color: rgb(var(--main-bg-color));
+
+  padding: 0 0.5rem;
+}
+.header img {
+  width: 100px;
+
+  margin-right: 2rem;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+
+  height: 60px;
+
+  color: var(--main-color);
+  background-color: rgb(var(--main-bg-color));
+
+  border-top: rgb(var(--header-border-color)) 1px solid;
+}
+
+.navbar .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 0 0.25rem;
+
+  border-right: rgb(var(--header-border-color)) 1px solid;
+
+  cursor: pointer;
+
+  font-size: 1.1rem;
+
+  text-align: center;
+}
+.navbar .link:hover,
+.link.active {
+  color: rgb(var(--main-bg-color));
+  background-color: var(--main-color);
+}
+
+/* display */
+.hide {
+  display: none;
+}
+/* tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+/* tab */
+.tab {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+.tab .loading {
+  text-align: center;
+}
+.tab .matches .stage {
+  margin: 1rem 0;
+}
+.tab .matches .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tab .matches .container .match-container {
+  flex: 50%;
+
+  border: rgb(var(--body-border-color)) 1px solid;
+  border-radius: 5px;
+
+  padding: 0.5rem;
+  margin: 0.25rem;
+
+  max-width: 400px;
+}
+.tab .matches .container .match-container:hover {
+  background-color: rgb(var(--header-border-color));
+  color: var(--main-color);
+}
+.tab .matches .container .match-container .group {
+  margin: 0 0 0.5rem 0;
+}
+.tab .matches .container .match-container .match {
+  display: flex;
+}
+.tab .matches .container .match-container .match .match-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+
+  border-left: rgb(var(--body-border-color)) 1px solid;
+}
+.tab .matches .container .match-container .match .teams {
+  margin: 0.25rem 0;
+  width: 60%;
+}
+.tab .matches .container .match-container .match .teams .team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+}
+.tab .matches .container .match-container .match .teams .team .team-info {
+  display: flex;
+  align-items: center;
+}
+.tab .matches .container .match-container .match .teams .team img {
+  width: 24px;
+  height: 24px;
+
+  border: rgb(var(--body-border-color)) 1px solid;
+  border-radius: 5px;
+
+  margin-right: 0.5rem;
+
+  background-color: gray;
+}
+
+/* standings */
+.standings {
+  padding: 0.5rem;
+  max-width: 600px;
+}
+.standings .group {
+  margin-bottom: 2rem;
+}
+.standings .group .group-title {
+  margin-bottom: 0.75rem;
+}
+.standings .group .header-row,
+.standings .group .teams .team {
+  display: flex;
+}
+.standings .group .header-row {
+  opacity: 0.6;
+}
+.standings .group .teams .team {
+  margin: 0.5rem 0;
+}
+.standings .group .header-row .stats,
+.standings .group .teams .team .stats {
+  width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.standings .group .header-row .name,
+.standings .group .teams .team .name {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.standings .group .teams .team {
+  border-left: 4px solid transparent;
+}
+.standings .group .teams .team:nth-child(1),
+.standings .group .teams .team:nth-child(2) {
+  border-left: 4px solid blue;
+}
+.standings .group .team .name * {
+  margin-left: 0.5rem;
+}
+.standings .group .team img {
+  width: 24px;
+  height: 24px;
+
+  border: rgb(var(--body-border-color)) 1px solid;
+  border-radius: 5px;
+}
+
+/* mobile devices */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+  .standings .group .header-row .stats,
+  .standings .group .teams .team .stats {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 14px;
+  }
+  .standings .group .header-row .stats,
+  .standings .group .teams .team .stats {
+    width: 25px;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Crest-24x24</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Crest-24x24" sketch:type="MSArtboardGroup">
+            <rect id="BG" sketch:type="MSShapeGroup" x="0" y="0" width="24" height="24"></rect>
+            <path d="M3.02777778,5 C3.02777778,5 10.0277778,4 12.0277778,2 C14.0277778,4 21.0277778,5 21.0277778,5 C21.0277778,5 22.0277778,18 12.0277778,22 C2.02777778,18 3.02777778,5 3.02777778,5 M0,0 24,0 24,24 0,24" id="Crest" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
